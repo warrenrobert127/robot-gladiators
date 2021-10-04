@@ -1,11 +1,8 @@
 var playerName = window.prompt("What is your robot's name?");
-var startGame = function() {
 var playerHealth = 100;
 var playerAttack = 10;
 var playerMoney = 10;
 
-// other logic remains the same...
-};
 
 var enemyNames = ['Roborto', 'Amy Android', 'Robo Trumble'];
 var enemyHealth = 50;
@@ -73,6 +70,13 @@ var fight = function(enemyName) {
   }
 };
 
+var startGame = function() {
+var playerHealth = 100;
+var playerAttack = 10;
+var playerMoney = 10;
+
+// other logic remains the same...
+
 //function to start a new game
 var startGame = function(){
 // fight each enemy-robot by looping over them and fighting them one at a time
@@ -99,11 +103,11 @@ for (var i = 0; i < enemyNames.length; i++) {
     window.alert('You have lost your robot in battle! Game Over!');
     break;
   }
-}
+};
 // after the loop ends, player is either out of health or enemies to fight, so run the endGame function
 endGame();
 
-};
+}
 // start the game when the page loads
 startGame();
 
@@ -127,4 +131,5 @@ else {
 }
 
   window.alert("The game has now ended. Let's see how you did!");
-};
+}
+}
