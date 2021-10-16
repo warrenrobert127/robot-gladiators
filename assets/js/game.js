@@ -203,7 +203,8 @@ var shop = function() {
 
   // convert answer from prompt to an actual number
   shopOptionPrompt = parseInt(shopOptionPrompt);
-
+    debugger;
+    console.log("shopOptionPrompt");
   // use switch case to carry out action
   switch (shopOptionPrompt) {
     case 1:
